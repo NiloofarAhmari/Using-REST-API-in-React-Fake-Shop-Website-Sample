@@ -1,0 +1,12 @@
+.cut-text { 
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .product a{
+      text-decoration: none;
+      color: black;
+  }
+  .product a:hover{
+    color:#555;
+}

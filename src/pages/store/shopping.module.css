@@ -1,0 +1,129 @@
+.users-table{
+  box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.582);
+}
+.table-row{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr .5fr;
+  column-gap: 5px;
+  text-align: center;
+}
+.table-row:not(:last-child){
+  border-bottom: 2px solid #e7e7e7;
+}
+.table-row:not(:first-child):hover{
+  background-color: #f1f1f1;
+}
+.title{
+  text-align: center;
+  color: white;
+  background-color: #555;
+}
+.data, .action{
+  padding: .5em 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.empty-table{
+  text-align: center;
+  font-style: italic;
+  font-size: 1.5em;
+  padding: 2em 0;
+}
+.action{
+  display: flex;
+  justify-content: center;
+}
+.icon-button{
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: transparent;
+  padding: 5px 8px;
+  font-size: 75%;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.icon-button:hover{
+  background-color: #e2e2e2;
+}
+.icon-button + .icon-button{
+  margin-left: 5px;
+}
+
+.add-panel{
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+.add-panel a{
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  background-color: #555;
+  color: white;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border: none;
+  border-radius: 50%;
+  padding: 0;
+}
+.form-wrapper {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 4px -2px #ccc;
+  padding: 1em;
+}
+.form-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 1em;
+}
+
+.form-wrapper input, .form-wrapper label {
+  padding: 0.5em 1em;
+}
+
+.form-wrapper label{
+  cursor: pointer;
+}
+.button-wrapper {
+  grid-column-start: 2;
+  display: flex;
+  justify-content: end;
+}
+.btn-save {
+  display: flex;
+  align-items: center;
+
+  border: none;
+  background-color: dodgerblue;
+  color: white;
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+
+.btn-save:hover{
+  background-color: hsl(210, 100%, 36%);
+}
+.btn-save:disabled{
+  background-color: lightgray;
+  cursor: not-allowed;
+}
+
+.btn-close {
+  display: flex;
+  align-items: center;
+
+  border: none;
+  background-color: orangered;
+  color: white;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.btn-close:hover {
+  background-color: hsl(16, 100%, 30%);
+}

@@ -1,0 +1,10 @@
+.title{
+    font-size: 28px;
+    margin: 38px;
+}
+.title > span{
+    border-bottom: 3px solid red;
+}
+.text-primary{
+    color: aqua;
+}
